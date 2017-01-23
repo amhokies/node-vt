@@ -2,11 +2,13 @@ language: node_js
 node_js: node
 script:
 - npm test
+after_success: npm run build
 branches:
   only:
   - master
 deploy:
   provider: npm
+  skip_cleanup: true
   email: amm28053@vt.edu
   api_key:
     secure: k2iVfXKYCHrbVnINghisQmRoRqGnCGJoazT8KP3/omt6QeTrqT8VtgyroJHwyZuXtT2yXQZJ32CJdUnB3cXTwJbozQuoqCNYiAyaulkjwKnLnIZ6iP7/OfJ/XE68sD6HFI5f0vUt7nIZFvktVmsY6b6BKhdmZVIGMAxWTZu/+htr2U3OvHFv8Y4Wf1aaBFXfvoYRJgDjGqUIr3TQJTx61bn8tIjRJDmyZADCk8AGlTeIVRD2otKcyP5wcDbYW7zsvmlAXCGb+KG4EHNgxUVB9uyD1PTObU6+Vk2VOOzXzcAzHiruJ6PSOZuiJzuhvoczPNNF8uY6vlW7epoyeVIUtJTSQxWuacB+tPLvdLYwejgCSzCuMGhILRH36lPZ03R6c1Og1N0vm3nFLHzyX06bpWokLULe6r85KlCZgGyty0q8lHQEfWHnBJraUxuXkEitfLWR0Tw1eRbrhw3PhwMJgUk1ugmT2b7jK+y72qEGXjlcg9TvBBzPind3aTBzpcoPfVTKjH793oJnB4AFcDquvN8061edVhEMSFUFx+EfUhj74zyE1DhzsKEqEG96JXGbs2BhK6MMbvOsyVjhXWXP01D80DmlLayE/aXWLOe29M1V7JlZ22E33gcZ3SlgKrbAOEOTINOf0nCC003DGwwKty1W5xJZiFS8xcL2nH0nDkk=
