@@ -1,6 +1,6 @@
 {
   "name": "node-vt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library to get information about the Virginia Tech Timetable",
   "main": "./app/index.js",
   "scripts": {
