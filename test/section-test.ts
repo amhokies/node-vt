@@ -37,7 +37,8 @@ describe('Section', function() {
                              .setInstructor('Prof').setDays('M W').setBegin('7am').setEnd('3pm')
                              .setLocation('MCB 129');
 
-            expect(builder.build).to.throw(Error);
+            // wrapping call to build so that it's picked up by the code coverage
+            expect(function() { builder.build(); }).to.throw(Error);
         });
     });
 });
