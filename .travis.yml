@@ -2,7 +2,7 @@ language: node_js
 node_js: node
 script:
 - npm test
-after_success: npm run build
+after_success: npm run build && ls
 deploy:
   provider: npm
   skip_cleanup: true
