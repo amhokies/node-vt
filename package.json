@@ -1,0 +1,20 @@
+{
+  "name": "node-vt",
+  "version": "0.0.1",
+  "description": "A library to get information about the Virginia Tech Timetable",
+  "main": "./app/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -r ts-node/register test/*",
+    "build": "./node_modules/typescript/bin/tsc"
+  },
+  "author": "Alex Marshall",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.38",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.5"
+  }
+}

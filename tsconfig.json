@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "declaration": true,
+        "outDir": "./app/"
+    },
+    "files": [
+        "index.ts",
+        "./lib/section.ts"
+    ]
+}
